@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>proyecto html</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" media="only screen and (max-width: 768px)" href=./css/estilos.css>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,200;0,400;1,300&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Montserrat', sans-serif;
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .header__flex {
+            background-color: rgb(52, 58, 64);
+            display: flex;
+            justify-content: center;
+            color:white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+
+            width: 50%;
+            padding-left: 2rem;
+        }
+
+        .img__logo {
+            width: 20%;
+
+        }
+
+        .navegador {
+
+            padding-right: 2.5rem;
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color:white;
+        }
+
+        .link {
+            text-decoration: none;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .imagenMain {
+            width: 100%;
+        }
+
+        /*pantalla divida*/
+        .sectionDividida {
+            display: flex;
+            height: 70vh;
+        }
+
+        .imagenIzq {
+            height: 100%;
+            width: 50%;
+            background-image: url("./assets/imagenes/floralis.jpg");
+            background-size: cover;
+        }
+
+        .contenidoDer {
+            height: 100%;
+            width: 50%;
+            padding: 2rem;
+            background-color: rgb(52, 58, 64);
+            color: white;
+            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .sectionTarjetas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .padreTarjetas {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .tarjetas__flex {
+            width: 80%;
+            display: flex;
+
+            justify-content: space-between;
+
+        }
+
+        .tarjeta {
+            background-color: white;
+            width: 30%;
+            border: 1px solid rgb(214, 214, 214);
+            border-radius: 10px;
+
+        }
+
+        .tarjetaImagen {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .tarjetaContenido {
+            padding: 1rem;
+        }
+
+        .tarjetaParrafo {
+            width: 80%;
+        }
+
+        .sectionPrincipal {
+            background-image: linear-gradient(to right, rgb(0 0 0 /.5), rgb(0 0 0 /.5)), url("./assets/imagenes/ba1.jpg");
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .contenidoPrincipal {
+            width: 60%;
+            text-align: right;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header__flex">
+        
+        <div class="logo">
+            <img class="img__logo" src="./assets/imagenes/codoacodo.png" alt="Logo de codo a codo" loading="lazy">
+            <h2>Conf. Bs.As.</h2>
+        </div>
+        
+        <nav class="navegador">
+            <a class="link" href="#">La Conferencia </a>
+            <a class="link" href="./pages/los_oradores.html">Los oradores</a>
+            <a class="link" href="./pages/lugaryfecha.html">El lugar y la fecha</a>
+            <a class="link" href="./pages/contacto.html">Conviértete en Orador</a>
+            <a class="link" href="./pages/comprartickets.html">Comprar Tickets</a>
+        </nav>
+    </header>
+    <main>
+        <section class="sectionPrincipal">
+            <div class="contenidoPrincipal">
+                <h1>Conferencia Bs.As.</h1>
+                <br>
+                <p>Llega por primera vez a Argentina un evento para compartir con<br>
+                 nuestra comunidad: conocimientos y experiencias de los expertos que<br>
+                 están creando el futuro de Internet. Ven a conocer a participantes del<br>
+                 encuentro, a otros estudiantes de Codo a Codo y oradores de primer<br>
+                 nivel que tenemos para ti. ¡Te esperamos!</p><br>
+                 <br>
+
+                <a href="./pages/contacto.html">Quiero ser orador</a>
+
+                <a href="./pages/comprartickets.html">Comprar Tickets</a>
+            </div>
+        </section>
+
+    </main>
+    <section class="sectionTarjetas">
+        <div><center><!--deprecado...-->
+            <br>
+            <h4>CONOCE A LOS</h4><br>
+
+            <h2>ORADORES</h2><br></center><!--va en div centrado con class css-->
+
+        </div>
+        <div class="padreTarjetas">
+            <div class="tarjetas__flex">
+                <div class="tarjeta">
+                 
+                    <img class="tarjetaImagen" src="./assets/imagenes/steve.jpg" alt="imagen card" loading="lazy"
+                        width="300">
+                    <div class="tarjetaContenido">
+                        <!--falta JavaScript React antes de nombre oradores-->
+                        <h3>Steve Jobs</h3>
+                        <div class="tarjetaParrafo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci
+                                reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias
+                                voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
+                        </div>
+
+                        <a href="">Leer más</a>
+                    </div>
+
+                </div>
+
+                <div class="tarjeta">
+                    <img class="tarjetaImagen" src="./assets/imagenes/bill.jpg" alt="imagen card" loading="lazy"
+                        width="300">
+                    <div class="tarjetaContenido">
+                        <h3>Bill Gates</h3>
+                        <div class="tarjetaParrafo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci
+                                reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias
+                                voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
+                        </div>
+
+                        <a href="">Leer más</a>
+                    </div>
+                </div>
+
+                <div class="tarjeta">
+                      <img class="tarjetaImagen" src="./assets/imagenes/ada.jpeg" alt="imagen card" loading="lazy"
+                        width="300">
+                    <div class="tarjetaContenido"><!--falta Negocios Startups antes de nombre-->
+                        <h3>Ada Lovelace</h3>
+                        <div class="tarjetaParrafo">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Ut dicta adipisci
+                                reiciendis at. Molestiae nobis eveniet provident qui, eligendi voluptatibus <br> alias
+                                voluptatum dolores, excepturi ipsum mollitia aspernatur consequatur maiores placeat.</p>
+                        </div>
+
+                        <a href="">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="sectionDividida">
+        <div class="imagenIzq">
+            <img class="imagenpostal" src="" alt="postal"; loading="lazy" width="300">
+<!--comentario alt postal se sobrepone a la imagen, no debería verse -->
+        </div>
+
+        <div class="contenidoDer">
+            <h3>Bs.As. - Octubre</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea facere quos quia porro enim obcaecati dolore
+                amet debitis, nihil possimus iusto alias! Nisi quasi, unde aspernatur debitis natus inventore
+                blanditiis.</p>
+            <a href="">Conoce más</a> <!--va en caja borde blanco-->
+
+        </div>
+    </section>
+    <br><br>
+    <section>
+            <table><!--mejorar aspecto de formulario quedó elemental-->
+            <thead>
+                <tr>
+                    <th>Orador</th>
+                    <th>Día</th>
+                    <th>Horario</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Steve Jobs</td>
+                    <td>Lun. y Mie.</td>
+                    <td>18:30 h a 20:00 h</td>
+                </tr>
+                <tr>
+                    <td>Bill Gates</td>
+                    <td>Mar. y Jue.</td>
+                    <td>18:30 h a 20:00 h</td>
+                </tr>
+                <tr>
+                    <td>Ada Lovelace</td>
+                    <td>Lun. y Mie.</td>
+                    <td>10:00 h a 11:30 h</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"> <a href="">Sacar entradas</a> </td>
+                </tr>
+            </tfoot>
+
+
+        </table>
+    </section>
+    <br><br>
+    <section>
+        <div><!--poner en caja y centrar   dar color a enviar-->
+            <span>CONVIÉRTETE EN UN</span>
+            <h3>ORADOR</h3>
+            <h6>Anótate como orador para dar una <span class="subdot">charla ignite</span>. ¡Cuéntanos de qué quieres hablar!</h6>
+            </div>
+            <br>
+             
+        </div>
+            <div>
+                <input type="text" placeholder="Nombre">
+                <input type="text" placeholder="Apellido">
+            </div>
+            <div>
+                <label for="">e-mail</label>
+                <input type="email">
+            </div>
+            <div>
+                <label for="">Ingresa contraseña</label>
+                <input type="password" required>
+            </div>
+            
+            <div>
+                <textarea name="" id="" cols="50" rows="10" placeholder="¿Sobre qué quieres hablar?"></textarea>
+            </div>
+            <p>Recuerda incluir un título para tu charla</p>
+            <div>
+                <p>Indica tu procedencia si eres de Argentina</p>
+                <br>
+                <select>
+                    <option value="">CABA</option>
+                    <option value="">GBA</option>
+                    <option value="">NORTE</option>
+                    <option value="">CENTRO</option>
+                    <option value="">SUR</option>
+                </select>
+            </div>
+            <div>
+                <p>Términos y Condiciones</p>
+                <input type="checkbox" name="Términos">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Enviar formulario">
+                <input type="reset" value="Limpiar">
+            </div>
+            <br>
+    </section>
+    
+    <footer><!--falta definir caja de footer color a box centrado a anclas, usar bootstrap-->
+        <a href="">Preguntas frecuentes</a>
+        <a href="">Contáctanos</a>
+        <a href="">Prensa</a>
+        <a href="">Conferencias</a>
+        <a href="">Términos y condiciones</a>
+        <a href="">Privacidad</a>
+        <a href="">Estudiantes</a>
+    </footer>
+
+</body>
+
+</html>
